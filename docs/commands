@@ -1,0 +1,32 @@
+System
+
+1. CPU
+
+2. All Processes --> probably /proc
+
+3. Kernel --> /proc/version
+
+4. Memory Utilization --> /proc/meminfo
+
+5. OS --> /etc/os-release
+
+6. RunningProcesses --> /proc/stat
+
+7. TotalProcesses --> /proc/stat
+
+8. UpTime --> /proc/uptime
+
+
+PROCESS
+
+1. PID --> /proc (already defined)
+
+2. CPUUtilization --> /proc/[PID]/stat
+
+3. Command --> /proc/[pid]/cmdline
+
+4. RAM --> /proc/[pid]/status
+
+5. UserName --> Get UID using /proc/[PID]/status and then match UID with username using /etc/passwd
+
+6. UpTime --> /proc/[pid]/stat
